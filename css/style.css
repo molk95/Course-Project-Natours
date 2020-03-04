@@ -7,19 +7,27 @@ Dark green: #28b485
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 34px;
+  padding: 2.125rem;
+
+  box-sizing: border-box;
 }
 
 .header {
@@ -31,20 +39,21 @@ body {
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  
   /* clip-path: polygon(0 0,0 0,100% 300px,0 100%); */
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 3.5rem;
+  left: 3.5rem;
 }
 
-.logo {
-  height: 38px;
+.header__logo {
+  height:  	3.375rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -57,24 +66,24 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden;
-  margin-bottom: 30px;
+  margin-bottom:  	2.875rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
-  font-size: 60px;
+  font-size: 6.75rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 4.1875rem;
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
-  font-size: 20px;
+  font-size: 2.25rem;
   font-weight: 400;
-  letter-spacing: 17.5px;
+  letter-spacing: 1.1rem;
   animation-name: moveInRight;
   animation-duration: 2s;
 }
@@ -82,11 +91,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translate(10px);
+    transform: translate(1rem);
   }
 
   100% {
@@ -97,11 +106,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translate(-10px);
+    transform: translate(-1rem);
   }
 
   100% {
@@ -114,12 +123,12 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 100px;
-  padding: 15px 40px;
+  border-radius: 6.25rem;
+  padding: 0.9375rem 2.5rem;
   display: inline-block;
   transition: all 0.2s;
   position: relative;
- 
+ font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -132,7 +141,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
@@ -162,7 +171,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(2.5rem);
   }
 
   100% {
@@ -171,7 +180,7 @@ body {
   }
 }
 
-.btn-animated{
+.btn--animated{
     animation: moveInBottom .4s ease-out .75s;
     animation-fill-mode: backwards;
 }
