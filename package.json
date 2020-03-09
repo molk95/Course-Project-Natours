@@ -1,0 +1,22 @@
+{
+  "name": "ntours",
+  "version": "1.0.0",
+  "description": "landing page for ntours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molk95/Course-Project-Natours.git"
+  },
+  "author": "molk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/molk95/Course-Project-Natours/issues"
+  },
+  "homepage": "https://github.com/molk95/Course-Project-Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
