@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/molk95/Course-Project-Natours#readme",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "minimist": "^1.2.5"
